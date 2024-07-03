@@ -1,16 +1,17 @@
 <template>
-  <div class="h-24 w-full bg-[#3DC1A8] flex justify-around text-white">
-    <img src="../../../img/VetMais Logo.png" alt="VetMais Logo" class="h-full">
+  <div class="bg-primaria">
+  <div class="h-24 mx-auto max-w-7xl px-4 flex justify-between text-white">
+    <img src="../../../../public/img/VetMais-Logo.png" alt="VetMais Logo" class="h-full">
     <div class="flex w-[425px] justify-between items-center text-lg">
       <a href="/" :class="{ 'font-bold underline': isCurrentPage('/') }">Home</a>
       <a href="/sobre-nos" :class="{ 'font-bold underline': isCurrentPage('/sobre-nos') }">Sobre nós</a>
       <a href="/exames" :class="{ 'font-bold underline': isCurrentPage('/exames') }">Exames</a>
       <a href="/galeria" :class="{ 'font-bold underline': isCurrentPage('/galeria') }">Galeria</a>
     </div>
-    <div class="flex ubuntu-medium items-center text-lg">
-      <a href="/login">Login</a>
+    <div class="flex ubuntu-medium items-center text-lg w-24">
+      <a href="/login" class="mx-auto">Login</a>
     </div>
-    
+  </div>
   </div>
 </template>
 
