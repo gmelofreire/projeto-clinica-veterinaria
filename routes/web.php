@@ -1,19 +1,16 @@
 <?php
 
+use App\Http\Controllers\AuthController;
+use App\Http\Controllers\PortalController;
 use Illuminate\Support\Facades\Route;
 
-Route::get('/', function () {
-    return view('index');
-});
-Route::get('/sobre-nos', function () {
-    return view('sobreNos');
-});
-Route::get('/exames', function () {
-    return view('exames');
-});
-Route::get('/galeria', function () {
-    return view('galeria');
-});
-Route::get('/login', function () {
-    return view('login');
-});
+//Portal
+Route::get('/', [PortalController::class, 'index'])->name('portal.index');
+Route::get('/sobre-nos', [PortalController::class, 'sobreNos'])->name('portal.sobre-nos');
+Route::get('/exames', [PortalController::class, 'exames'])->name('portal.exames');
+Route::get('/galeria',  [PortalController::class, 'galeria'])->name('portal.galeria');
+
+//Login
+Route::get('/login',  [AuthController::class, 'login'])->name('portal.login');
+
+

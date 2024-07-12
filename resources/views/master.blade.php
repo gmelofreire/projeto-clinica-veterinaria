@@ -25,6 +25,5 @@
 *{
     font-family: "Ubuntu", sans-serif;
 }
-
 </style>
 </html>
