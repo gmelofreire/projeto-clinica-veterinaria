@@ -29,9 +29,9 @@ const props = defineProps({
 const funcionarios = [
   { foto: "../../img/medicos/veterinario-1.jpg", nome: "Dr. Nefario", especialidade: "Cardiologista" },
   { foto: "../../img/medicos/veterinario-2.jpg", nome: "Dra. Jaqueline", especialidade: "Ortopedista" },
-  { foto: "../../img/medicos/veterinario-1.jpg", nome: "Dr. Nefario", especialidade: "Cardiologista" },
-  { foto: "../../img/medicos/veterinario-1.jpg", nome: "Dr. Nefario", especialidade: "Cardiologista" },
-  { foto: "../../img/medicos/veterinario-1.jpg", nome: "Dr. Nefario", especialidade: "Cardiologista" }
+  { foto: "../../img/medicos/veterinario-3.jpg", nome: "Dra. Helena", especialidade: "Oftamologista" },
+  { foto: "../../img/medicos/veterinario-4.jpg", nome: "Dr. Fernando", especialidade: "Infectologista" },
+  { foto: "../../img/medicos/veterinario-5.jpg", nome: "Dra. Luciana", especialidade: "Cardiologista" }
 ];
 
 const limitedFuncionarios = computed(() => funcionarios.slice(0, props.quant));

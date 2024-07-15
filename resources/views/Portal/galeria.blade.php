@@ -2,6 +2,8 @@
 
 @section('content')
 
-<Cabecalho />
+<cabecalho></cabecalho>
+
+<rodape></rodape>
 
 @endsection
