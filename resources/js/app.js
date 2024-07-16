@@ -7,6 +7,7 @@ import Faq from './components/Faq.vue';
 import Rodape from './components/estrutura/Rodape.vue';
 import BannerPagina from './components/estrutura/BannerPagina.vue';
 import Funcionarios from './components/Funcionarios.vue';
+import AvaliacoesGaleria from './components/AvaliacoesGaleria.vue';
 
 const app = createApp();
 
@@ -18,5 +19,6 @@ app.component('faq', Faq);
 app.component('rodape', Rodape);
 app.component('banner-pagina', BannerPagina);
 app.component('funcionarios', Funcionarios);
+app.component('avaliacoesGaleria', AvaliacoesGaleria);
 
 app.mount('#app');

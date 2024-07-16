@@ -13,6 +13,13 @@ class ExamesSeeder extends Seeder
      */
     public function run(): void
     {
-        Exames::create(['id' => '1', 'nome' => 'Cardiologista', 'icone' => '/img/icones/icone-cardiologia.svg']);
+        Exames::create(['nome' => 'Cardiologista', 'icone' => 'exames/icones/icone-cardiologia.svg']);
+        Exames::create(['nome' => 'Dentista', 'icone' => 'exames/icones/icone-dentista.svg']);
+        Exames::create(['nome' => 'Vacinação', 'icone' => 'exames/icones/icone-vacinacao.svg']);
+        Exames::create(['nome' => 'Medicação', 'icone' => 'exames/icones/icone-medicacao.svg']);
+        Exames::create(['nome' => 'Hematologista', 'icone' => 'exames/icones/icone-hematologista.svg']);
+        Exames::create(['nome' => 'Internação', 'icone' => 'exames/icones/icone-internacao.svg']);
+        Exames::create(['nome' => 'Curativos', 'icone' => 'exames/icones/icone-curativos.svg']);
+        Exames::create(['nome' => 'Ortopedista', 'icone' => 'exames/icones/icone-ortopedista.svg']);
     }
 }

@@ -6,7 +6,7 @@
 
     <div class="bg-primaria mx-auto max-w-7xl px-32 py-11 mt-20 rounded-3xl">
         <h3 class="text-[32px] text-center font-semibold text-white ">Nossos Exames</h3>
-        <exames :quant="4"></exames>
+        <exames :quant="4" :exames={{$exames}}></exames>
         <div class="w-full flex justify-center">
             <a href="/exames"
                 class="py-4 mt-10 bg-secundaria text-[20px] text-white box-border inline-block text-center w-1/3 rounded-xl">
