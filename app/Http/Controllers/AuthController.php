@@ -7,6 +7,7 @@ use Illuminate\Http\Request;
 class AuthController extends Controller
 {
     public function login(){
-        return view('login');
+        $pagina = 'Login';
+        return view('login', compact('pagina'));
     }
 }
