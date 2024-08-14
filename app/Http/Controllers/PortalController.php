@@ -11,9 +11,11 @@ class PortalController extends Controller
     public function index(){
         $pagina = 'Home'; 
         $exames = Exames::all();
+        $avaliacoes = Avaliacao::all();
         return view('portal.index', compact(
             'pagina',
-            'exames'
+            'exames',
+            'avaliacoes'
         ));
     }
     public function sobreNos(){

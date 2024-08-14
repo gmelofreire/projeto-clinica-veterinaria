@@ -8,7 +8,7 @@
       <a href="/exames" :class="{ 'font-bold underline': isCurrentPage('/exames') }">Exames</a>
       <a href="/galeria" :class="{ 'font-bold underline': isCurrentPage('/galeria') }">Galeria</a>
     </div>
-    <div class="flex ubuntu-medium items-center text-lg w-24">
+    <div class="flex ubuntu-medium items-center text-lg ">
       <a href="/login" class="mx-auto">Login</a>
     </div>
   </div>

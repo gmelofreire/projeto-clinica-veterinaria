@@ -16,7 +16,8 @@
     </div>
     <div class="mt-20">
         <h3 class="text-[32px] text-center font-semibold text-black ">Avaliações</h3>
-        <avaliacoesindex :quant="6"></avaliacoesindex>
+        <avaliacoesindex :quant="6" :avaliacoes="{{ $avaliacoes }}"></avaliacoesindex>
+
     </div>
 
     <div class="mt-20 mx-auto max-w-7xl">
