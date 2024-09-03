@@ -11,7 +11,9 @@
         href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
         rel="stylesheet">
     @vite('resources/css/app.css')
-    <title>VetMais - {{$pagina}}</title>
+    <title>VetMais
+        @if (isset($pagina)) - {{ $pagina }}@endif
+    </title>
 </head>
 
 <body>
@@ -22,8 +24,9 @@
 </body>
 
 <style>
-*{
-    font-family: "Ubuntu", sans-serif;
-}
+    * {
+        font-family: "Ubuntu", sans-serif;
+    }
 </style>
+
 </html>

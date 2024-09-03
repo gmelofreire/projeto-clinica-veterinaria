@@ -3,6 +3,7 @@
 use App\Http\Controllers\AuthController;
 use App\Http\Controllers\ExamesController;
 use App\Http\Controllers\PortalController;
+use App\Http\Controllers\PainelController;
 use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
 
@@ -19,14 +20,16 @@ Route::get('/registro', function () {
     return view('auth.register');
 });
 
-Route::get('/dashboard', function () {
-    return view('dashboard');
-})->middleware(['auth', 'verified'])->name('dashboard');
+Route::get('/dashboard', [PainelController::class, 'index'])->middleware(['auth', 'verified'])->name('dashboard');
 
 Route::middleware('auth')->group(function () {
-    Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
-    Route::patch('/profile', [ProfileController::class, 'update'])->name('profile.update');
-    Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
+    Route::get('/perfil', [ProfileController::class, 'edit'])->name('perfil.edit');
+    Route::patch('/perfil', [ProfileController::class, 'update'])->name('perfil.update');
+    Route::delete('/perfil', [ProfileController::class, 'destroy'])->name('perfil.destroy');
+});
+
+Route::fallback(function () {
+    echo 'A rota acessada não existe, <a href="' . route('login') . '">Principal</a> para ir patra a página principal';
 });
 
 require __DIR__.'/auth.php';

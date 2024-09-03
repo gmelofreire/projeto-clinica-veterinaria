@@ -10,6 +10,9 @@ import BannerPagina from './components/estrutura/BannerPagina.vue';
 import Funcionarios from './components/Funcionarios.vue';
 import AvaliacoesGaleria from './components/AvaliacoesGaleria.vue';
 import Login from './components/login/Login.vue';
+import EsqueciSenha from './components/login/EsqueciSenha.vue';
+import Dashboard from './components/painel/Dashboard.vue';
+import GraficoConsultasAno from './components/graficos/GraficoConsultasAno.vue';
 import Alpine from 'alpinejs';
 
 window.Alpine = Alpine;
@@ -27,6 +30,9 @@ app.component('rodape', Rodape);
 app.component('banner-pagina', BannerPagina);
 app.component('funcionarios', Funcionarios);
 app.component('avaliacoesGaleria', AvaliacoesGaleria);
+app.component('esquecisenha', EsqueciSenha);
 app.component('login', Login);
+app.component('dashboard', Dashboard);
+app.component('grafico-consulta-ano', GraficoConsultasAno);
 
 app.mount('#app');

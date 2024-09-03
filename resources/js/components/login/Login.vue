@@ -20,7 +20,7 @@
           <div class="flex items-center justify-between">
             <label for="password" class="block text-sm font-medium leading-6 text-gray-900">Senha</label>
             <div class="text-sm">
-              <a href="#" class="font-semibold text-primaria hover:text-primaria-hover">Esqueceu a senha?</a>
+              <a href="/esqueci-senha" class="font-semibold text-primaria hover:text-primaria-hover">Esqueceu a senha?</a>
             </div>
           </div>
           <div class="mt-2">
@@ -31,9 +31,6 @@
           <button type="submit" class="flex w-full justify-center rounded-md bg-primaria px-3 py-1.5 text-sm font-semibold leading-6 text-white shadow-sm hover:bg-primaria-hover focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primaria-dark">Entrar</button>
         </div>
       </form>
-      <p class="mt-10 text-center text-sm text-gray-500">Ainda não é membro?
-        <a href="/registro" class="font-semibold leading-6 text-primaria hover:text-primaria-hover">Registre-se</a>
-      </p>
     </div>
     </div>
     

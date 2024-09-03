@@ -1,6 +1,7 @@
 @extends('master')
 
 @section('content')
+
 <Login loginUrl="/login"/>
 
 @endsection
